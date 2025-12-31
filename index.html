@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>snakes and ladders</title>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="material-icons.css" />
+    <link rel="stylesheet" href="sl.css" />
+    <link
+      rel="shortcut icon"
+      href="./Vintage snakes and ladders Carry-All Pouch by Natalie Jeffcott.jpeg"
+      type="image/png"
+    />
+    <script type="module" src="sl.js" defer></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="app-wrapper">
+        <div class="main-stage">
+          <div class="stage">
+            <img
+              class="logo"
+              src="./assets/img/Gemini_Generated_Image_glow_logo.png"
+              alt="logo"
+            />
+            <p>
+              Welcome to the snakes and ladders game, and very thanks for
+              playing the game, choose your game play mode, follow game setup
+              instructions and enjoy the game.
+            </p>
+            <div class="play-mode-buttons">
+              <button id="solo" class="btn">Solo</button>
+              <button id="vs-cpu" class="btn">VS CPU</button>
+              <button id="vs-players" class="btn">VS Players</button>
+            </div>
+          </div>
+        </div>
+        <div class="game-setup">
+          <!-- <div class="step-spots-container"></div> -->
+
+          <div class="stages">
+            <div class="main main-1 hidden">
+              <input
+                type="text"
+                class="players-number-input"
+                placeholder="set players count"
+              />
+              <button class="setup btn">setup</button>
+            </div>
+            <div class="main main-2 inputs-container hidden">
+              <h3>Set Player name</h3>
+              <ul class="name-input-list"></ul>
+            </div>
+            <div class="main main-3 hidden">
+              <div class="step-script">
+                <h2>Choose your color</h2>
+                <p>
+                  Note that the color you choose, will applied to your pointer
+                  and button
+                </p>
+              </div>
+              <div class="player-configs-container">
+                <ul class="players-color-setup-container"></ul>
+                <ul class="pointers-container"></ul>
+              </div>
+            </div>
+
+            <button class="next btn">next</button>
+          </div>
+        </div>
+        <div class="app-board">
+          <nav class="app-bar">
+            <div class="settings-wrapper">
+              <span id="theme-btn" class="material-symbols-outlined theme"
+                >light_mode</span
+              >
+              <span id="speed-btn" class="material-symbols-outlined theme speed"
+                >speed</span
+              >
+            </div>
+            <div class="logo-container">
+              <ul class="game-options-menu hidden">
+                <li id="new-game" class="game-option">New Game</li>
+                <li id="reset-game" class="game-option">Reset Game</li>
+              </ul>
+              <img
+                id="logo-img"
+                src="./assets/img/Gemini_Generated_Image_glow_logo.png"
+                alt="logo"
+              />
+            </div>
+            <div class="pointers-wrapper">
+              <div class="pointers-list"></div>
+            </div>
+          </nav>
+
+          <div class="board">
+            <div class="message hidden">
+              <button id="message_replay" class="btn">Replay</button>
+            </div>
+          </div>
+
+          <div class="dice-wrapper">
+            <span id="d-1" class="dice dice-1 pm hidden"></span>
+            <span id="d-2" class="dice dice-2 ptl pbr hidden"></span>
+            <span id="d-3" class="dice dice-3 pbr hidden">
+              <span class="ptl pm"></span>
+            </span>
+            <span id="d-4" class="dice dice-4 ptl ptr hidden">
+              <span class="pbl pbr"></span>
+            </span>
+            <span id="d-5" class="dice dice-5 pm hidden">
+              <span class="ptl ptr"></span>
+              <span class="pbl pbr"></span>
+            </span>
+            <span id="d-6" class="dice dice-6 pml pmr hidden">
+              <span class="ptl ptr"></span>
+              <span class="pbl pbr"></span>
+            </span>
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <button id="start" class="btn">Start</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
